@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from .forms import ArticleForm, CommentForm
-from .models import Article
+from .models import Article, Comment
 
 # Create your views here.
 def create(request):
@@ -30,10 +30,12 @@ def index(request):
 def detail(request, id):
     article = Article.objects.get(id=id)
     form = CommentForm()
+    comments = article.comment_set.all()
 
     context = {
         'article': article,
         'form': form,
+        'comments': comments,
     }
 
     return render(request, 'detail.html', context)

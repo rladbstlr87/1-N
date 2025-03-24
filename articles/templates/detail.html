@@ -16,5 +16,13 @@
         {{form}}
         <input type="submit">
     </form>
+
+    <hr>
+
+    {{article}}
+    은 article.comment_set은 models.py의 Article 클래스에서 왔다
+    {% for comment in comments %}
+        <li>{{comment.content}}</li>
+    {% endfor %}
     
 {% endblock %}
