@@ -53,3 +53,9 @@ def update(request, id):
     }
 
     return render(request, 'update.html', context)
+
+def delete(request, id):
+    article = Article.objects.get(id=id)
+    article.delete()
+
+    return redirect('articles:index')

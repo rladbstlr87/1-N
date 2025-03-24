@@ -30,4 +30,5 @@ urlpatterns = [
     # U
     path('<int:id>/update/', views.update, name='update'),
     # D
+    path('<int:id>/delete/', views.delete, name='delete'),
 ]
