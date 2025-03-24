@@ -7,7 +7,8 @@
 4. `django-admin startproject board .`
 ---
 5. `django-admin startapp articles`
-6. `settings.py`에서 앱폴더 등록
+6. `settings.py`에서 앱폴더 등록0
+base.html 구조 작성
 ---
 7. 앱폴더 `articles`폴더에도 urls.py 만들어서 중복되는 함수 최소화(이중구조)
 ---
