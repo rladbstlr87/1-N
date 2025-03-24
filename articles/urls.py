@@ -28,6 +28,6 @@ urlpatterns = [
     path('<int:id>/', views.detail, name='detail'),
 
     # U
-
+    path('<int:id>/update/', views.update, name='update'),
     # D
 ]
