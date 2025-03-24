@@ -31,4 +31,8 @@ urlpatterns = [
     path('<int:id>/update/', views.update, name='update'),
     # D
     path('<int:id>/delete/', views.delete, name='delete'),
+
+    # Comment
+    # C
+    path('<int:article_id>/comments/create/', views.comment_create, name='comment_create'),
 ]
